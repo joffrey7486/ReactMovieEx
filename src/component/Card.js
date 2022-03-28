@@ -80,7 +80,7 @@ const Card = ( { movie } ) => {
             } alt={movie.title} />
 
             <h2>{movie.title}</h2>
-            
+
             {movie.release_date ? <h5>Date de sortie: {dateFormater(movie.release_date)}</h5> : ""}
 
             <h4>{movie.vote_average}/10 <span>⭐</span></h4>
@@ -89,6 +89,8 @@ const Card = ( { movie } ) => {
 
             {movie.overview ? <h3>Synopsis</h3> : ""}
             <p>{movie.overview}</p>
+
+            <div className="btn">Ajouter au coup de coeur</div>
         </div>
     );
 };
